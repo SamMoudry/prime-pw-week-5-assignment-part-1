@@ -14,7 +14,7 @@ const me = {
   lastName: 'Moudry',
   hasSiblings: true,
   shoeCount: 6,
-  faveThreeFoods: ['pizza', 'strawberry pie', 'skittles']
+  favThreeFoods: ['pizza', 'strawberry pie', 'skittles'],
 
 };
 console.log('A little about me:', me);
@@ -25,7 +25,7 @@ console.log('A little about me:', me);
     created above to set its value.
   - Console.log fullName
 */
-const fullName = (me.firstName,) + me.lastName;
+const fullName = me.firstName + " " + me.lastName;
 console.log(fullName);
 
 
@@ -33,8 +33,10 @@ console.log(fullName);
   - Console.log your first favorite food
   - Console.log your last favorite food
 */
-
-
+let firstFavFood = me.favThreeFoods[0];
+let lastFavFood = me.favThreeFoods[me.favThreeFoods.length - 1]
+console.log(firstFavFood);
+console.log(lastFavFood);
 
 /* 4. Change a property of an existing object.
   - Console.log your current shoe count.
